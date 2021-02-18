@@ -1,0 +1,38 @@
+* Tasks
+** DONE Start classify keybindings under different modes
+   CLOSED: [2021-01-27 Wed 15:51]
+
+* common command
+- s-k: kill current buffer
+- C-M-p: move to the previous parathesis
+- C-M-n: move to the next parathesis
+* org-mode
+- C-c C-t: Change the TODO state of an item
+* Evil-mode
+** leader-key
+*** common vim keybindings
+- C-O: back to previous locaiton
+- C-I: jump to forward location
+*** leader key ","
+- ai: comment or uncoment
+- aa: copy the the clipboard
+- ss: swiper
+- x-number: quickly switch to the window
+- xs: save the current buffer
+- aw: swap windows
+*** leader key "SPC"
+* undo-fu-mode
+- (define-key evil-normal-state-map "u" 'undo-fu-only-undo)
+- (define-key evil-normal-state-map (kbd "C-r") 'undo-fu-only-redo)
+* Lsp-mode
+* Mark
+- set mark:
+C-SPC to set mark
+C-SPC to set mark and cancel the highlight
+- back to the original location
+C-u C-SPC
+Reference: https://emacs-china.org/t/topic/7730/5
+    
+* counsel-etag
+- C-]: Look for definition
+
